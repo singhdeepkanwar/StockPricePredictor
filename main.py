@@ -4,10 +4,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 import matplotlib.pyplot as plt
 
-stock = 'COALINDIA.csv'
+# Iterate through diffrent dataset to check multiple stock accuracy
+stock = ['COALINDIA.csv','CIPLA.csv','TITAN.csv','ULTRACEMO.csv','UPL.csv','ADANIENT.csv']
 
 # Load the data
-data = pd.read_csv(stock)  # Update with your file path
+data = pd.read_csv(stock[0])  # Update with your file path
 
 # Convert the 'Date' column to a datetime object if it's not already
 data['Date'] = pd.to_datetime(data['Date'])
