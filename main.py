@@ -52,6 +52,8 @@ log_reg = LogisticRegression()
 log_reg.fit(X_train, y_train)
 
 # Now predict on test_set
+y_pred = log_reg.predict(X_test)
+
 
 # Investment strategy parameters
 investment_amount = 10000  # Initial investment amount in dollars
